@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+section {
+    padding: 5em;
+}
+
+h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.subheading {
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+    color: rgb(190, 190, 190);
+    font-weight: bold;
+}
