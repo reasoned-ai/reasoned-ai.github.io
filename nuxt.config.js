@@ -4,6 +4,7 @@ export default {
   /*
   ** Headers of the page
   */
+
   head: {
     title: 'Reasoned AI',
     meta: [
