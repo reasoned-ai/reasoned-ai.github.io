@@ -9,9 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",  
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "generate:ghp": "DEPLOY_ENV=GH_PAGES nuxt generate",  
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
