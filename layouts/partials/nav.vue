@@ -10,7 +10,7 @@
                 <li><a href="https://blog.reasoned.ai">Blog</a></li>
                 <li><nuxt-link to="/about">About</nuxt-link></li>
                 <li><nuxt-link to="/demo">Demo</nuxt-link></li>
-                <li><nuxt-link to="/login">Join</nuxt-link></li>
+                <li><nuxt-link to="/signup">Join</nuxt-link></li>
             </ul>
         </nav>
     </header>    

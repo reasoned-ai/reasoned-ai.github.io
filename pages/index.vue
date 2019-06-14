@@ -1,74 +1,82 @@
 <template>
+
   <section class="container">
-    <h1> Experts </h1>
+    <img src="../assets/images/background.jpg" class="background">
     
-    <p class="subheading"> Turn your knowledge into improvements in AI </p>
+    <div class="parallax-title">
+      <div>
+        <img src="../assets/images/biglogo.png" class="biglogo">
+      </div>
+      <h1> Experts </h1>
+      
+      <p class="subheading"> Turn your knowledge into improvements in AI </p>
 
-    <div class="links">
-        <nuxt-link
-          to="/demo"
-          class="button--green">Individual</nuxt-link>
-        <nuxt-link
-          to="/demo"
-          class="button--blue">Enterprise</nuxt-link>
-        <nuxt-link
-          to="/whitepaper"
-          class="button--white">Whitepaper</nuxt-link>
-    </div>
-    <div>
-      <ul class="cards">
-        <li>
-          <font-awesome-layers full-width class="fa-7x">
-            <font-awesome-icon icon="vials"/>
-          </font-awesome-layers>
-          <v-card-title primary-title class="card-content">
-            <div>
-              <h3 class="headline mb-0">Guided Data Science</h3>
-              <div class="card-text">
-              <div> Intelligent GUI to help you explore data </div>
-              <div> and experiment ideas. </div> 
-              <div> No knowledge of neural networks is </div>
-              <div> required.</div>
+      <div class="links">
+          <nuxt-link
+            to="/demo"
+            class="button--green">Individual</nuxt-link>
+          <nuxt-link
+            to="/signup"
+            class="button--blue">Enterprise</nuxt-link>
+          <nuxt-link
+            to="/whitepaper"
+            class="button--white">Whitepaper</nuxt-link>
+      </div>
+      <div class="cards-d">
+        <ul class="cards">
+          <li>
+            <font-awesome-layers full-width class="fa-7x">
+              <font-awesome-icon icon="vials"/>
+            </font-awesome-layers>
+            <v-card-title primary-title class="card-content">
+              <div>
+                <h3 class="headline mb-0">Guided Data Science</h3>
+                <div class="card-text">
+                <div> Intelligent GUI to help you explore data </div>
+                <div> and experiment ideas. </div> 
+                <div> No knowledge of neural networks is </div>
+                <div> required.</div>
+                </div>
               </div>
-            </div>
-          </v-card-title>
-
-        </li>
-        <li>
-          <font-awesome-layers full-width class="fa-7x">
-            <font-awesome-icon icon="book-reader"/>
-          </font-awesome-layers>
-          <v-card-title primary-title class="card-content">
-            <div>
-              <h3 class="headline mb-0">Logic Reasoning</h3>
-              <div class="card-text">
-              <div> AI explains itself in human logic. </div>
-              <div> You can confirm or correct in human logic too. </div> 
-              <div> Warning: </div>
-              <div> AI might challenge with counter-examples. </div>
+            </v-card-title>
+          </li>
+          <li>
+            <font-awesome-layers full-width class="fa-7x">
+              <font-awesome-icon icon="book-reader"/>
+            </font-awesome-layers>
+            <v-card-title primary-title class="card-content">
+              <div>
+                <h3 class="headline mb-0">Logic Reasoning</h3>
+                <div class="card-text">
+                <div> AI explains itself in human logic. </div>
+                <div> You can confirm or correct in human logic too. </div> 
+                <div> Warning: </div>
+                <div> AI might challenge with counter-examples. </div>
+                </div>
               </div>
-            </div>
-          </v-card-title>
-
-        </li>
-        <li>
-          <font-awesome-layers full-width class="fa-7x">
-            <font-awesome-icon icon="search-dollar"/>
-          </font-awesome-layers>
-          <v-card-title primary-title class="card-content">
-            <div>
-              <h3 class="headline mb-0">Decentralized Community</h3>
-              <div class="card-text">
-              <div> The improvement due to your efforts will be recorded</div>
-              <div> securely and shared among your peers. </div>
-              <div> Let's create a sustainable knowledge economy </div>
-              <div> together.</div>
+            </v-card-title>
+          </li>
+          <li>
+            <font-awesome-layers full-width class="fa-7x">
+              <font-awesome-icon icon="search-dollar"/>
+            </font-awesome-layers>
+            <v-card-title primary-title class="card-content">
+              <div>
+                <h3 class="headline mb-0">Decentralized Community</h3>
+                <div class="card-text">
+                <div> The improvement due to your efforts will be recorded</div>
+                <div> securely and shared among your peers. </div>
+                <div> Let's create a sustainable knowledge economy </div>
+                <div> together.</div>
+                </div>
               </div>
-            </div>
-          </v-card-title>
-
-        </li>
-      </ul>
+            </v-card-title>
+          </li>
+        </ul>
+      </div>
+      <div class="footer">
+        <p>&copy; 2019 All Rights Reserved | Los Altos CA USA</p>
+      </div>
     </div>
   </section>
 </template>
@@ -82,17 +90,10 @@ export default {
   .links {
     padding-top: 1em;
   }
-  .button--green{
-    border-width: 0.2em;
-    font-weight: bold;
-  }
-  .button--blue {
-    border-width: 0.2em;
-    font-weight: bold;
-  }
-  .button--white {
-    border-width: 0.2em;
-    font-weight: bold;
+  .footer {
+    display: block;
+    padding-top: 1em;
+    color: rgb(190, 190, 190)
   }
   .cards {
     display:grid;
@@ -100,19 +101,25 @@ export default {
     column-gap: 3em;
     margin-top: 0em;
   }
-  @media (max-width:800px) {
-      .cards {
-        display: none;
-      }
-      .button--green{
-        font-size: 8px;
-      }
-      .button--blue {
-        font-size: 8px;
-      }
-      .button--white {
-        font-size: 8px;
-      }
+
+  .biglogo {
+    display: none;
+  }
+
+  h1 {
+      margin-top: 0.5em;
+      font-size: 5em;
+      text-transform: uppercase;
+      color: white;
+  }
+
+  .subheading {
+      font-size: 2.5em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-transform: capitalize;
+      color: rgb(190, 190, 190);
+      font-weight: bold;
   }
   .headline {
     margin-bottom: 1em;
@@ -134,6 +141,145 @@ export default {
     color: rgb(190, 190, 190);
   }
 
+  .container {
+    position: absolute;
+    margin: 0;
+  }
+  
+  .parallax-title {
+    position: absolute;
+    top: 15%;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+  }
+  
+  .background {
+    filter: brightness(0.35);
+    width: 100%;
+  }
+
+  .button--green {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #03d6a5;
+    border-width: 0.2em;
+    font-weight: bold;
+    color: #03d6a5;
+    text-decoration: none;
+    padding: 0.6em 2em;
+    margin-left: 1em;
+    transition-duration: 0.5s;
+  }
+
+  .button--green:hover {
+    color: #fff;
+    background-color: #3b8070;
+    transform: scale(1.1);
+  }
+
+  .button--blue {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #04aada;
+    border-width: 0.2em;
+    font-weight: bold;
+    color: #04aada;
+    text-decoration: none;
+    padding: 0.6em 2em;
+    margin-left: 1em;
+    transition-duration: 0.5s;
+  }
+
+  .button--blue:hover {
+    color: #fff;
+    background-color: #35495e;
+    transform: scale(1.1);
+  }
+
+  .button--white {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid rgb(210, 210, 210);
+    border-width: 0.2em;
+    font-weight: bold;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+    padding: 0.6em 2em;
+    margin-left: 1em;
+    transition-duration: 0.5s;
+  }
+
+  .button--white:hover {
+    color: #fff;
+    background-color: rgb(110, 110, 110);
+    transform: scale(1.1);
+  }
+
+  @media (max-width:800px) {
+    .links {
+      padding-bottom: 5em;
+    }
+
+    .cards-d {
+      margin: 0;
+      background-color: black;
+    }
+    .cards {
+      display:block;
+      margin-top: 2em;
+      background-color: black;
+    }
+
+    .fa-7x {
+      margin-left: -0.6em;
+    }
+
+    .card-content {
+      margin-left: -2em;
+    }
+
+    .biglogo {
+      display: inline;
+    }
+    .parallax-title {
+      top: 15%;
+    }
+    .button--green {
+      color: #fff;
+      background-color: #3b8070;
+    }
+    .button--blue {
+      color: #fff;
+      background-color: #35495e;
+    }    
+    .button--white {
+      color: #fff;
+      background-color: rgb(110, 110, 110);
+      margin-top: 1em;
+    }    
+  }
+
+  @media (min-width:800px) {
+    .parallax-title {
+      top: 5%;
+      left: 2%;
+      right: 2%;
+    }
+    .background {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+  @media (min-width:2000px) {
+    .parallax-title {
+      top: 10%;
+    }
+  }
+
+
   @media (max-width:2000px){
     .cards li {
       transform:scale(0.6);
@@ -141,14 +287,15 @@ export default {
     .cards {
       margin-top: -7em;
     }
-    .card-text {
-      display: none;
-    }
   }
   
   @media (min-width:2000px) {
     .cards li:hover {
-      transform: scale(1.1);
+      transform: scale(1.17);
+    }
+    .footer {
+      padding-top: 5em;
     }
   }
+
 </style>
