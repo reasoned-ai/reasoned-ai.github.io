@@ -53,6 +53,12 @@ export default {
     li {
         display: inline;
     }
+    @media (max-width:600px) {
+        header {
+            display: none;
+        }
+    }
+
     li a {
         padding: 1em 1em;
         display: inline-block;

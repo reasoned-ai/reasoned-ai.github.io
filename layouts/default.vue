@@ -3,10 +3,10 @@
     <Nav />
     <div class="parallax-container">
       <no-ssr>
-        <nuxt class="parallax-title"/>
-        <parallax :speed-factor="1.0" breakpoint="(min-width: 80px)">
+        <parallax speed-factor="1.0" breakpoint="(min-width: 80px)" class="parallax-img" sectionHeight=100>
           <img src="../assets/images/background.jpg" class="background">
         </parallax>
+        <nuxt class="parallax-title"/>
       </no-ssr>
     </div>
     <Footer />
@@ -30,7 +30,7 @@ export default {
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -46,13 +46,32 @@ html {
   margin: 0;
 }
 
+@media (min-width:300px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:800px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:2000px) {
+  body {
+    font-size: 20px;
+  }
+}
+
 .button--green {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #03d6a5;
   color: #03d6a5;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 0.6em 2em;
+  margin-left: 1em;
   transition-duration: 0.5s;
 }
 
@@ -68,8 +87,8 @@ html {
   border: 1px solid #04aada;
   color: #04aada;
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+  padding: 0.6em 2em;
+  margin-left: 1em;
   transition-duration: 0.5s;
 }
 
@@ -85,8 +104,8 @@ html {
   border: 1px solid rgb(210, 210, 210);
   color: rgb(210, 210, 210);
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+  padding: 0.6em 2em;
+  margin-left: 1em;
   transition-duration: 0.5s;
 }
 
@@ -109,10 +128,28 @@ html {
   top: 20%;
   left: 2%;
   right: 2%;
-  padding: 20px;
+  padding: 1em;
   background: rgba(0, 0, 0, 0);
   color: white;
   text-align: center;
+}
+
+@media (min-width:800px) {
+  .parallax-container {
+    height: 35em;
+  }
+  .parallax-title {
+    top: 5%;
+  }
+}
+
+@media (min-width:2000px) {
+  .parallax-container {
+    height: 68em;
+  }
+  .parallax-title {
+    top: 10%;
+  }
 }
 
 .background {
