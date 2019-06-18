@@ -1,8 +1,6 @@
 <template>
 
-  <section class="container">
-    <img src="../assets/images/background.jpg" class="background">
-    
+  <section >
     <div class="parallax-title">
       <div>
         <img src="../assets/images/biglogo.png" class="biglogo">
@@ -22,6 +20,8 @@
             to="/whitepaper"
             class="button--white">Whitepaper</nuxt-link>
       </div>
+      <p class="comingsoon"> Coming soon </p>
+
       <div class="cards-d">
         <ul class="cards">
           <li>
@@ -107,7 +107,7 @@ export default {
   }
 
   h1 {
-      margin-top: 0.5em;
+      margin-top: 0.75em;
       font-size: 5em;
       text-transform: uppercase;
       color: white;
@@ -115,10 +115,16 @@ export default {
 
   .subheading {
       font-size: 2.5em;
-      margin-top: 1em;
-      margin-bottom: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
       text-transform: capitalize;
       color: rgb(190, 190, 190);
+      font-weight: bold;
+  }
+  .comingsoon {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      text-transform: capitalize;
       font-weight: bold;
   }
   .headline {
@@ -130,7 +136,7 @@ export default {
   }
 
   .card-content {
-    margin-top: 3em;
+    margin-top: 1em;
     font-weight: bold;
     font-size: 1.2em;
     color: rgb(190, 190, 190);
@@ -141,11 +147,6 @@ export default {
     color: rgb(190, 190, 190);
   }
 
-  .container {
-    position: absolute;
-    margin: 0;
-  }
-  
   .parallax-title {
     position: absolute;
     top: 15%;
@@ -154,11 +155,6 @@ export default {
     text-align: center;
   }
   
-  .background {
-    filter: brightness(0.35);
-    width: 100%;
-  }
-
   .button--green {
     display: inline-block;
     border-radius: 4px;
@@ -216,11 +212,14 @@ export default {
     transform: scale(1.1);
   }
 
+  .cards-d {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   @media (max-width:800px) {
     .links {
       padding-bottom: 5em;
     }
-
     .cards-d {
       margin: 0;
       background-color: black;
@@ -257,7 +256,13 @@ export default {
       color: #fff;
       background-color: rgb(110, 110, 110);
       margin-top: 1em;
-    }    
+    }
+
+    .comingsoon {
+      margin-top:1.5em;
+      position: relative;
+      transform:translateY(-3em);
+    }
   }
 
   @media (min-width:800px) {
@@ -265,11 +270,6 @@ export default {
       top: 5%;
       left: 2%;
       right: 2%;
-    }
-    .background {
-      width: 100%;
-      height: 100%;
-      margin: 0;
     }
   }
 

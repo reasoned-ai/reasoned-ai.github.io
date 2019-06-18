@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <div class="header">
         <nuxt-link to="/" class="logo">
             <img src="@/assets/images/logo.png">
             &nbsp;&nbsp;&nbsp;&nbsp; Reasoned AI
@@ -8,12 +8,12 @@
             <ul>
                 <li><nuxt-link to="/">Home</nuxt-link></li>
                 <li><a href="https://blog.reasoned.ai">Blog</a></li>
-                <li><nuxt-link to="/about">About</nuxt-link></li>
+                <li><nuxt-link to="/whitepaper">About</nuxt-link></li>
                 <li><nuxt-link to="/demo">Demo</nuxt-link></li>
                 <li><nuxt-link to="/signup">Join</nuxt-link></li>
             </ul>
         </nav>
-    </header>    
+    </div>    
 </template>
 
 <script>
@@ -23,13 +23,13 @@ export default {
 </script>
 
 <style>
-    header {
-        background: rgb(251, 251, 251);
-        display:grid;
-        grid-template-columns: auto auto auto;
+    .header {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: auto auto;
         column-gap: 3em;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 20%;
         font-weight: bold;
     }
 
@@ -39,7 +39,7 @@ export default {
         text-transform: uppercase;
         text-decoration: none;
         font-weight: bold;
-        color: black;
+        color: rgb(210,210,210);
         font-size: 1em;
     }
 
@@ -54,7 +54,7 @@ export default {
         display: inline;
     }
     @media (max-width:600px) {
-        header {
+        .header {
             display: none;
         }
     }

@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <Nav />
-    <no-ssr>
-      <nuxt />
-    </no-ssr>
+    <nuxt />
   </div>
 </template>
 
@@ -31,6 +29,7 @@ html {
   box-sizing: border-box;
 }
 
+
 *,
 *:before,
 *:after {
@@ -49,4 +48,22 @@ html {
     font-size: 20px;
   }
 }
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  margin: 0;
+  background-image: linear-gradient( rgba(85, 40, 40, 0.7), rgba(0, 0, 0, 0.7) ), url("../assets/images/background.jpg");
+  background-size: 100% 100%;
+}
+
+@media (max-width:800px) {
+  .container{
+    background-size: 100% 52%;
+    background-repeat: no-repeat;
+  }
+}
+
 </style>
