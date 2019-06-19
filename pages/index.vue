@@ -17,8 +17,8 @@
             to="/signup"
             class="button--blue">Enterprise</nuxt-link>
           <nuxt-link
-            to="/whitepaper"
-            class="button--white">Whitepaper</nuxt-link>
+            to="/yellowpaper"
+            class="button--yellow">Yellowpaper</nuxt-link>
       </div>
       <p class="comingsoon"> Coming soon </p>
 
@@ -75,7 +75,7 @@
         </ul>
       </div>
       <div class="footer">
-        <p>&copy; 2019 All Rights Reserved | Los Altos CA USA</p>
+        <p>&copy; 2019 All Rights Reserved | Los Altos CA USA 94024</p>
       </div>
     </div>
   </section>
@@ -193,22 +193,22 @@ export default {
     transform: scale(1.1);
   }
 
-  .button--white {
+  .button--yellow {
     display: inline-block;
     border-radius: 4px;
-    border: 1px solid rgb(210, 210, 210);
+    border: 1px solid rgb(210, 170, 0);
     border-width: 0.2em;
     font-weight: bold;
-    color: rgb(210, 210, 210);
+    color: rgb(210, 170, 0);
     text-decoration: none;
     padding: 0.6em 2em;
     margin-left: 1em;
     transition-duration: 0.5s;
   }
 
-  .button--white:hover {
+  .button--yellow:hover {
     color: #fff;
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(120, 100, 0);
     transform: scale(1.1);
   }
 
@@ -216,6 +216,7 @@ export default {
     margin-left: 5%;
     margin-right: 5%;
   }
+
   @media (max-width:800px) {
     .links {
       padding-bottom: 5em;
@@ -252,9 +253,9 @@ export default {
       color: #fff;
       background-color: #35495e;
     }    
-    .button--white {
+    .button--yellow {
       color: #fff;
-      background-color: rgb(110, 110, 110);
+      background-color:  rgb(120, 100, 0);
       margin-top: 1em;
     }
 
@@ -273,14 +274,14 @@ export default {
     }
   }
 
-  @media (min-width:2000px) {
+  @media (min-width:1900px) {
     .parallax-title {
       top: 10%;
     }
   }
 
 
-  @media (max-width:2000px){
+  @media (max-width:1900px){
     .cards li {
       transform:scale(0.6);
     }
@@ -289,7 +290,7 @@ export default {
     }
   }
   
-  @media (min-width:2000px) {
+  @media (min-width:1900px) {
     .cards li:hover {
       transform: scale(1.17);
     }
