@@ -8,7 +8,7 @@
             <ul>
                 <li><nuxt-link to="/">Home</nuxt-link></li>
                 <li><a href="https://blog.reasoned.ai">Blog</a></li>
-                <li><nuxt-link to="/whitepaper">About</nuxt-link></li>
+                <li><nuxt-link to="/yellowpaper">Vision</nuxt-link></li>
                 <li><nuxt-link to="/demo">Demo</nuxt-link></li>
                 <li><nuxt-link to="/signup">Join</nuxt-link></li>
             </ul>
