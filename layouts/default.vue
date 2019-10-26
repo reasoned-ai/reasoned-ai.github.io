@@ -43,12 +43,6 @@ html {
   }
 }
 
-@media (min-width:2000px) {
-  body {
-    font-size: 20px;
-  }
-}
-
 .container {
   position: absolute;
   width: 100%;

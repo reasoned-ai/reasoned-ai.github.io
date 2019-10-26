@@ -49,7 +49,7 @@ export default {
         }
       ]
      }
-    ]    
+    ]
   ],
   /*
   ** Build configuration

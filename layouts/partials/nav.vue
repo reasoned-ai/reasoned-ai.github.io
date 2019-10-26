@@ -7,13 +7,12 @@
         <nav>
             <ul>
                 <li><nuxt-link to="/">Home</nuxt-link></li>
-                <li><a href="https://blog.reasoned.ai">Blog</a></li>
-                <li><nuxt-link to="/yellowpaper">Vision</nuxt-link></li>
-                <li><nuxt-link to="/demo">Demo</nuxt-link></li>
-                <li><nuxt-link to="/signup">Join</nuxt-link></li>
+                <li><a href="https://medium.com/reasoned-ai">Blog</a></li>
+                <li><a href="https://docs.google.com/document/d/1d8IH734g_bwnHXLvTe24OXdm97ioIqnUuMTwmAbtUSM/edit?usp=sharing">Vision</a></li>
+                <li><a href="https://reasoned.us20.list-manage.com/subscribe/post?u=cf65772f893ac97470fb3ae81&id=ec94e66734">Demo</a></li>
             </ul>
         </nav>
-    </div>    
+    </div>
 </template>
 
 <script>
@@ -28,8 +27,8 @@ export default {
         display: grid;
         grid-template-columns: auto auto;
         column-gap: 3em;
-        margin-left: 15%;
-        margin-right: 20%;
+        margin-left: 25%;
+        margin-right: 30%;
         font-weight: bold;
     }
 
@@ -68,6 +67,6 @@ export default {
     li a:hover {
         padding: 1em 1em;
         display: inline-block;
-        color: #03d6a5;
+        color: #ff756d;
     }
 </style>

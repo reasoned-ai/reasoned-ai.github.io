@@ -5,24 +5,25 @@
   "author": "xumiao",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --hostname 0.0.0.0",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "@fortawesome/vue-fontawesome": "^0.1.6",
-    "nuxt": "^2.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
+    "nuxt": "^2.10.2",
     "nuxt-fontawesome": "^0.4.0",
     "vue-parallaxy": "^1.1.1",
-    "vuetify": "^1.5.14"
+    "vue-pdf": "^4.0.7",
+    "vuetify": "^1.5.19"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
+    "nodemon": "^1.19.4",
     "push-dir": "^0.4.1"
   }
 }
