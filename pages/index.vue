@@ -293,7 +293,7 @@ export default {
     }
   }
 
-  @media (max-width:2000px){
+  @media (max-width:2000px) and (min-width: 800px){
     h1 {
       margin-top: 5em;
       margin-bottom: 2em;
